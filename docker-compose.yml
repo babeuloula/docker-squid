@@ -1,0 +1,12 @@
+version: '3.5'
+
+services:
+
+  squid:
+    build:
+      context: ./
+    ports:
+      - "${SQUID_PORT:-3128}:3128"
+    volumes:
+      - ./conf/users:/etc/squid/users
+    restart: always
