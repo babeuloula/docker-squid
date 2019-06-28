@@ -8,6 +8,5 @@ services:
     ports:
       - "${SQUID_PORT:-3128}:3128"
     volumes:
-      - ./cache:/var/cache/squid
       - ./conf/users:/etc/squid/users
     restart: always
