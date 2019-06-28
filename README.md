@@ -15,7 +15,7 @@ docker-compose up -d
 ### Add a user
 
 ```bash
-docker-compose exec squid htpasswd -b -c /etc/squid/users "LOGIN" "PASSWORD"
+docker-compose exec squid htpasswd -b /etc/squid/users "LOGIN" "PASSWORD"
 ```
 
 ### Read logs
