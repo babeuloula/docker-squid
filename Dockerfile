@@ -9,6 +9,8 @@ RUN set -xe;\
 COPY conf/squid.conf /etc/squid/squid.conf
 COPY entrypoint.sh /usr/bin/local/entrypoint
 
+RUN chmod 755 /usr/bin/local/entrypoint
+
 EXPOSE 3128
 
 ENTRYPOINT /usr/bin/local/entrypoint
